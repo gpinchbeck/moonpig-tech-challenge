@@ -1,0 +1,46 @@
+.cardsContainer {
+  margin-top: 5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-gap: 5em;
+}
+
+.searchBar {
+  font-size: medium;
+  border: 0px;
+  border-radius: 6em;
+  width: 30rem;
+  padding: 1em;
+  background: none;
+}
+
+.searchBarCont {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6em;
+  height: 3rem;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(240, 225, 225, 0.3);
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.searchButtonContainer {
+  cursor: pointer;
+  margin-top: 0.2em;
+  margin-right: 1em;
+  padding: 0.2em;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar:focus {
+  outline: none;
+}

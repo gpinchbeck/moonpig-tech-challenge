@@ -1,21 +1,4 @@
-.card {
-  display: flex;
-  margin: 1em;
-  margin-bottom: 2.5%;
-  margin-top: 2.5%;
-  align-self: flex-end;
-}
-
-.cardImage {
-  transition: transform 300ms;
+.singleCard {
   box-shadow: 0px 0px 10px rgba(119, 119, 119, 0.25);
   max-width: 225px;
-  height: fit-content;
-}
-
-.cardImage:hover {
-  cursor: pointer;
-  transform: translateY(-5px);
-  transition: transform 300ms;
-  box-shadow: 0px 0px 15px rgba(119, 119, 119, 0.25);
 }

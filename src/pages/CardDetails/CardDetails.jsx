@@ -1,10 +1,10 @@
 import { useLocation } from "react-router-dom";
-import { Button } from "../../components/Button/Button";
-import { ModalCarousel } from "../../components/ModalCarousel/ModalCarousel";
+import { Button } from "./../../components/Button/Button";
+import { ModalCarousel } from "./../../components/ModalCarousel/ModalCarousel";
 import "./CardDetails.css";
 import { useEffect, useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
-import { NavBar } from "../../components/NavBar/NavBar";
+import { NavBar } from "./../../components/NavBar/NavBar";
 
 export const CardDetails = () => {
   const location = useLocation();

@@ -1,8 +1,8 @@
-import logo from "../../images/moonpig-logo-thumb.png";
+import logo from "./../../images/moonpig-logo-thumb.png";
 import { Link, useNavigate } from "react-router-dom";
-import { SearchBar } from "../SearchBar/SearchBar";
+import { SearchBar } from "./../SearchBar/SearchBar";
 import { useEffect, useState } from "react";
-import { ColouredLine } from "../ColouredLine/ColouredLine";
+import { ColouredLine } from "./../ColouredLine/ColouredLine";
 import { IconChevronRight } from "@tabler/icons-react";
 import "./NavBar.css";
 

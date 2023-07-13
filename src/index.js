@@ -3,19 +3,34 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { CardListings } from "./pages/CardListings/CardListings";
+import { CardDetails } from "./pages/CardDetails/CardDetails";
+import { MantineProvider } from "@mantine/core";
 
-const router = createBrowserRouter([
-  {
-    path: "/*",
-    element: <App />,
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/*",
+//     element: <CardListings />,
+//     children: [
+//       {
+//         path: "details",
+//         element: <CardDetails />,
+//       },
+//     ],
+//   },
+// ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/* <MantineProvider> */}
+    {/* <RouterProvider router={router} /> */}
+    <Router>
+      <App />
+    </Router>
+    {/* </MantineProvider> */}
   </React.StrictMode>
 );
 

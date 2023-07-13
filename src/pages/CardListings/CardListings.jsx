@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Modal } from "@mantine/core";
 import "./CardListings.css";
-import { Card } from "../../components/Card/Card";
-import { Button } from "../../components/Button/Button";
-import { ModalCarousel } from "../../components/ModalCarousel/ModalCarousel";
-import { NavBar } from "../../components/NavBar/NavBar";
+import { Card } from "./../../components/Card/Card";
+import { Button } from "./../../components/Button/Button";
+import { ModalCarousel } from "./../../components/ModalCarousel/ModalCarousel";
+import { NavBar } from "./../../components/NavBar/NavBar";
 
 export const CardListings = () => {
   const TRANSITION_DURATION = 1000;

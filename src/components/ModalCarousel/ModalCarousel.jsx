@@ -1,7 +1,7 @@
 import { Carousel, useAnimationOffsetEffect } from "@mantine/carousel";
 import { useEffect, useState } from "react";
 import "./ModalCarousel.css";
-import { Card } from "../Card/Card";
+import { Card } from "./../Card/Card";
 import {
   IconCircleArrowLeftFilled,
   IconCircleArrowRightFilled,

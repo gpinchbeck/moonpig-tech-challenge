@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  margin-top: 2em;
+  margin-left: 20em;
+  margin-right: 20em;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  width: 53rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  height: 8em;
+}
+
+.logoContainer:hover {
+  cursor: pointer;
+}
+
+.link {
+  font-weight: 700;
+}
+
+.routePath {
+  display: flex;
+  justify-content: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  padding-left: 2em;
+}

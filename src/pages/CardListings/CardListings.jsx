@@ -4,7 +4,10 @@ import { IconSearch, IconX } from "@tabler/icons-react";
 import { Modal } from "@mantine/core";
 import "./CardListings.css";
 import { Card } from "../../components/Card/Card";
+import { Button } from "../../components/Button/Button";
 import { ModalCarousel } from "../../components/ModalCarousel/ModalCarousel";
+import { ColouredLine } from "../../components/ColouredLine/ColouredLine";
+import { NavBar } from "../../components/NavBar/NavBar";
 
 export const CardListings = () => {
   const TRANSITION_DURATION = 1000;
@@ -16,6 +19,10 @@ export const CardListings = () => {
   const [updateSearch, setUpdateSearch] = useState("");
   const [currentItem, setCurrentItem] = useState([]);
   const [opened, setOpened] = useState(false);
+
+  const navToCards = (searchData) => {
+    setUpdateSearch(searchData);
+  };
 
   useEffect(() => {
     const getData = async () => {
@@ -33,7 +40,13 @@ export const CardListings = () => {
 
   return (
     <div>
-      <div className="searchBarContainer">
+      <NavBar
+        item={currentItem}
+        hasSearch={true}
+        hasRoute={false}
+        navToCards={navToCards}
+      />
+      {/* <div className="searchBarContainer">
         <div className="searchBarCont">
           <input
             className="searchBar"
@@ -58,6 +71,7 @@ export const CardListings = () => {
           </div>
         </div>
       </div>
+      <ColouredLine colour="blue" /> */}
       <Modal
         opened={opened}
         onClose={() => setOpened(false)}
@@ -71,14 +85,14 @@ export const CardListings = () => {
             moonpigProductNo={currentItem["MoonpigProductNo"]}
             TRANSITION_DURATION={TRANSITION_DURATION}
           />
-          <button
-            className="modalButton"
-            onClick={() =>
-              navigate("/details", { state: { item: currentItem } })
-            }
-          >
-            View Details
-          </button>
+          <div className="modalButtonContainer">
+            <Button
+              label="View Details"
+              onClick={() =>
+                navigate("/details", { state: { item: currentItem } })
+              }
+            />
+          </div>
         </div>
       </Modal>
       <div className="cardsContainer">
@@ -98,6 +112,7 @@ export const CardListings = () => {
                 <Card
                   src={item["ProductImage"]["Link"]["Href"]}
                   alt={item["ProductImage"]["Link"]["Title"]}
+                  width={225}
                 />
               </div>
             )

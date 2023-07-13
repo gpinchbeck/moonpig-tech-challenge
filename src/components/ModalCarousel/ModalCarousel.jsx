@@ -31,7 +31,7 @@ export const ModalCarousel = ({ moonpigProductNo, TRANSITION_DURATION }) => {
 
   const slides = data.map((url) => (
     <Carousel.Slide key={url["ImageUrl"]}>
-      <Card src={url["ImageUrl"]} />
+      <Card src={url["ImageUrl"]} width={320} />
     </Carousel.Slide>
   ));
 

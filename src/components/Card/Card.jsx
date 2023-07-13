@@ -1,5 +1,5 @@
 import "./Card.css";
 
-export const Card = ({ src, alt }) => {
-  return <img className="singleCard" src={src} alt={alt} />;
+export const Card = ({ src, alt, width }) => {
+  return <img className="singleCard" width={width} src={src} alt={alt} />;
 };

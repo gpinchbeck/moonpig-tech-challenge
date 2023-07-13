@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/moonpig-tech-challenge/static/css/main.e6f6e7f5.css",
-    "main.js": "/moonpig-tech-challenge/static/js/main.c107c8ee.js",
+    "main.js": "/moonpig-tech-challenge/static/js/main.e69b9e13.js",
     "static/js/787.77c7dc48.chunk.js": "/moonpig-tech-challenge/static/js/787.77c7dc48.chunk.js",
     "index.html": "/moonpig-tech-challenge/index.html",
     "main.e6f6e7f5.css.map": "/moonpig-tech-challenge/static/css/main.e6f6e7f5.css.map",
-    "main.c107c8ee.js.map": "/moonpig-tech-challenge/static/js/main.c107c8ee.js.map",
+    "main.e69b9e13.js.map": "/moonpig-tech-challenge/static/js/main.e69b9e13.js.map",
     "787.77c7dc48.chunk.js.map": "/moonpig-tech-challenge/static/js/787.77c7dc48.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6f6e7f5.css",
-    "static/js/main.c107c8ee.js"
+    "static/js/main.e69b9e13.js"
   ]
 }

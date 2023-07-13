@@ -1,9 +1,7 @@
-import { useNavigate, useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Button } from "../../components/Button/Button";
 import { ModalCarousel } from "../../components/ModalCarousel/ModalCarousel";
 import "./CardDetails.css";
-import { ColouredLine } from "../../components/ColouredLine/ColouredLine";
-import logo from "../../images/moonpig-logo-thumb.png";
 import { useEffect, useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import { NavBar } from "../../components/NavBar/NavBar";
@@ -23,8 +21,6 @@ export const CardDetails = () => {
           `https://moonpig.github.io/tech-test-frontend/product/${item["MoonpigProductNo"]}.json`
         )
       ).json();
-
-      console.log(data);
 
       setData(data);
       setStr(data["Description"]);
@@ -46,7 +42,7 @@ export const CardDetails = () => {
         </div>
         <div className="cardDetailsRight">
           <div>{data["Title"]}</div>
-          {data != undefined && (
+          {data !== undefined && (
             <div className="description">
               {str.toString().replaceAll("<br />", "\n")}
             </div>

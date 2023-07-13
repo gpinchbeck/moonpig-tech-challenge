@@ -14,8 +14,6 @@ export const NavBar = ({ item, hasSearch, hasRoute, navToCards }) => {
     setData(searchData);
   };
 
-  console.log(typeof navToCards, navToCards);
-
   useEffect(() => {
     if (navToCards !== undefined) {
       navToCards(data);

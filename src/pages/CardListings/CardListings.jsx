@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { IconSearch, IconX } from "@tabler/icons-react";
 import { Modal } from "@mantine/core";
 import "./CardListings.css";
 import { Card } from "../../components/Card/Card";
 import { Button } from "../../components/Button/Button";
 import { ModalCarousel } from "../../components/ModalCarousel/ModalCarousel";
-import { ColouredLine } from "../../components/ColouredLine/ColouredLine";
 import { NavBar } from "../../components/NavBar/NavBar";
 
 export const CardListings = () => {
@@ -15,7 +13,6 @@ export const CardListings = () => {
   const navigate = useNavigate();
 
   const [data, setData] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
   const [updateSearch, setUpdateSearch] = useState("");
   const [currentItem, setCurrentItem] = useState([]);
   const [opened, setOpened] = useState(false);
@@ -29,8 +26,6 @@ export const CardListings = () => {
       const data = await (
         await fetch("https://moonpig.github.io/tech-test-frontend/search.json")
       ).json();
-
-      console.log(data);
 
       setData(data["Products"]);
     };
@@ -46,32 +41,6 @@ export const CardListings = () => {
         hasRoute={false}
         navToCards={navToCards}
       />
-      {/* <div className="searchBarContainer">
-        <div className="searchBarCont">
-          <input
-            className="searchBar"
-            placeholder="Search"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          <div className="searchButtonContainer">
-            {searchTerm !== "" && (
-              <div
-                onClick={() => {
-                  setUpdateSearch("");
-                  setSearchTerm("");
-                }}
-              >
-                <IconX />
-              </div>
-            )}
-            <div onClick={() => setUpdateSearch(searchTerm)}>
-              <IconSearch />
-            </div>
-          </div>
-        </div>
-      </div>
-      <ColouredLine colour="blue" /> */}
       <Modal
         opened={opened}
         onClose={() => setOpened(false)}

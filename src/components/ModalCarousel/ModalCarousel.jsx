@@ -21,8 +21,6 @@ export const ModalCarousel = ({ moonpigProductNo, TRANSITION_DURATION }) => {
         )
       ).json();
 
-      console.log(data["ImageUrls"][0]);
-
       setData(data["ImageUrls"]);
     };
 

@@ -16,7 +16,7 @@
 - Progressive Web App
 
 ## File Structure
-
+```bash
 ├── README.md
 ├── node_modules
 ├── package.json
@@ -66,3 +66,4 @@
         └── CardListings
             ├── CardListings.css
             └── CardListings.jsx
+```

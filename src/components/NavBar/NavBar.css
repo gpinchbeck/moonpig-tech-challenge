@@ -1,4 +1,4 @@
-header {
+nav {
   display: flex;
   margin-top: 2em;
   margin-left: 20em;
@@ -8,9 +8,9 @@ header {
 
 .searchContainer {
   display: flex;
-  width: 53rem;
+  width: 45rem;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 2em;
 }
 
 .logo {

@@ -7,20 +7,14 @@
   background: none;
 }
 
-.searchBarCont {
+.searchBarContainer {
+  margin-top: 2em;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6em;
   height: 3rem;
   width: 30rem;
   display: flex;
-  justify-content: center;
   background-color: rgba(240, 225, 225, 0.3);
-}
-
-.searchBarContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 2em;
 }
 
 .searchButtonContainer {

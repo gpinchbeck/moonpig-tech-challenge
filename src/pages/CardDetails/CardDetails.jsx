@@ -30,22 +30,22 @@ export const CardDetails = () => {
   }, [item]);
 
   return (
-    <div>
+    <main>
       <Toaster />
       <NavBar item={item} hasSearch={false} hasRoute={true} />
-      <div className="detailsContainer">
-        <div className="cardDetailsLeft">
+      <section className="detailsContainer">
+        <article className="cardDetailsLeft">
           <ModalCarousel
             moonpigProductNo={item["MoonpigProductNo"]}
             TRANSITION_DURATION={1000}
           />
-        </div>
-        <div className="cardDetailsRight">
-          <div>{data["Title"]}</div>
+        </article>
+        <article className="cardDetailsRight">
+          <h4>{data["Title"]}</h4>
           {data !== undefined && (
-            <div className="description">
+            <p className="description">
               {str.toString().replaceAll("<br />", "\n")}
-            </div>
+            </p>
           )}
           <Button
             onClick={() =>
@@ -53,8 +53,8 @@ export const CardDetails = () => {
             }
             label={"Buy Me"}
           />
-        </div>
-      </div>
-    </div>
+        </article>
+      </section>
+    </main>
   );
 };

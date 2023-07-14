@@ -34,7 +34,7 @@ export const CardListings = () => {
   }, []);
 
   return (
-    <div>
+    <main>
       <NavBar
         item={currentItem}
         hasSearch={true}
@@ -49,7 +49,7 @@ export const CardListings = () => {
         yOffset={0}
         size={"lg"}
       >
-        <div className="modalContainer">
+        <section className="modalContainer">
           <ModalCarousel
             moonpigProductNo={currentItem["MoonpigProductNo"]}
             TRANSITION_DURATION={TRANSITION_DURATION}
@@ -62,15 +62,15 @@ export const CardListings = () => {
               }
             />
           </div>
-        </div>
+        </section>
       </Modal>
-      <div className="cardsContainer">
+      <section className="cardsContainer">
         {data.map(
           (item) =>
             item["Title"]
               .toLowerCase()
               .includes(updateSearch.toLowerCase()) && (
-              <div
+              <article
                 className="cardImage"
                 key={item["ProductId"]}
                 onClick={() => {
@@ -83,10 +83,10 @@ export const CardListings = () => {
                   alt={item["ProductImage"]["Link"]["Title"]}
                   width={225}
                 />
-              </div>
+              </article>
             )
         )}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };

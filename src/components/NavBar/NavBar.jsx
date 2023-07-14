@@ -21,26 +21,26 @@ export const NavBar = ({ item, hasSearch, hasRoute, navToCards }) => {
   }, [navToCards, data]);
 
   return (
-    <div>
-      <header>
-        <div className="logoContainer" onClick={() => navigate("/")}>
+    <header>
+      <nav>
+        <figure className="logoContainer" onClick={() => navigate("/")}>
           <img className="logo" src={logo} alt="Moonpig logo" />
-        </div>
+        </figure>
         {hasSearch && (
-          <div className="searchContainer">
+          <search className="searchContainer">
             <SearchBar searchToNav={searchToNav} />
-          </div>
+          </search>
         )}
         {hasRoute && (
-          <div className="routePath">
+          <a className="routePath">
             <Link className="link" to="/">
               All Cards
             </Link>
             <IconChevronRight /> {item["Title"]}
-          </div>
+          </a>
         )}
-      </header>
+      </nav>
       <ColouredLine colour="#273963" />
-    </div>
+    </header>
   );
 };

@@ -1,7 +1,6 @@
 {
   "name": "moonpig-tech-challenge",
   "version": "0.1.0",
-  "homepage": "https://gpinchbeck.github.io/moonpig-tech-challenge",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",

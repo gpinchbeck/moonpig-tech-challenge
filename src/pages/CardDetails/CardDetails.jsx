@@ -12,8 +12,6 @@ export const CardDetails = () => {
   const [data, setData] = useState([]);
   const [str, setStr] = useState("");
 
-  const patt = /abc/g;
-
   const item = location.state.item;
 
   useEffect(() => {

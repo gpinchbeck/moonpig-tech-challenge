@@ -27,17 +27,17 @@ export const NavBar = ({ item, hasSearch, hasRoute, navToCards }) => {
           <img className="logo" src={logo} alt="Moonpig logo" />
         </figure>
         {hasSearch && (
-          <search className="searchContainer">
-            <SearchBar searchToNav={searchToNav} />
-          </search>
+          <div className="searchContainer" role="search">
+            <SearchBar searchToNav={searchToNav} data-testid="searchBar" />
+          </div>
         )}
         {hasRoute && (
-          <text className="routePath">
+          <span className="routePath">
             <Link className="link" to="/">
               All Cards
             </Link>
-            <IconChevronRight /> <text className="title">{item["Title"]}</text>
-          </text>
+            <IconChevronRight /> <span className="title">{item["Title"]}</span>
+          </span>
         )}
       </nav>
       <ColouredLine colour="#273963" />

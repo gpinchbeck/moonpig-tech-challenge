@@ -29,12 +29,13 @@ export const ModalCarousel = ({ moonpigProductNo, TRANSITION_DURATION }) => {
 
   const slides = data.map((url) => (
     <Carousel.Slide key={url["ImageUrl"]}>
-      <Card src={url["ImageUrl"]} width={320} />
+      <Card src={url["ImageUrl"]} alt={url["ImageNo"]} width={320} />
     </Carousel.Slide>
   ));
 
   return (
     <Carousel
+      role="modalCarousel"
       styles={{
         control: {
           "&[data-inactive]": {
@@ -44,8 +45,20 @@ export const ModalCarousel = ({ moonpigProductNo, TRANSITION_DURATION }) => {
         },
       }}
       includeGapInSize={false}
-      nextControlIcon={<IconCircleArrowRightFilled width={24} height={24} />}
-      previousControlIcon={<IconCircleArrowLeftFilled width={24} height={24} />}
+      nextControlIcon={
+        <IconCircleArrowRightFilled
+          width={24}
+          height={24}
+          role="next-control-icon"
+        />
+      }
+      previousControlIcon={
+        <IconCircleArrowLeftFilled
+          width={24}
+          height={24}
+          role="previous-control-icon"
+        />
+      }
       controlsOffset={0}
       slideSize={100}
       className="carousel"

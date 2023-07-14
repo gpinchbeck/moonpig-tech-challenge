@@ -2,7 +2,7 @@
   font-size: medium;
   border: 0px;
   border-radius: 6em;
-  width: 30rem;
+  /* width: 30em; */
   padding: 1em;
   background: none;
 }
@@ -11,10 +11,11 @@
   margin-top: 2em;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6em;
-  height: 3rem;
   width: 30rem;
+  height: 3em;
   display: flex;
   background-color: rgba(240, 225, 225, 0.3);
+  justify-content: space-between;
 }
 
 .searchButtonContainer {

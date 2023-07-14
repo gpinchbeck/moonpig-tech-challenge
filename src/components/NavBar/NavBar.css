@@ -8,7 +8,7 @@ nav {
 
 .searchContainer {
   display: flex;
-  width: 45rem;
+  /* width: 45rem; */
   justify-content: center;
   margin-bottom: 2em;
 }
@@ -34,4 +34,47 @@ nav {
   font-weight: 400;
   letter-spacing: 0.025em;
   padding-left: 2em;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  nav {
+    margin: 0;
+    width: 100vw;
+  }
+
+  .searchContainer {
+    margin-right: 3em;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .searchContainer {
+    margin-right: 5em;
+    width: 20vw;
+  }
+
+  .routePath {
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    display: none;
+  }
 }

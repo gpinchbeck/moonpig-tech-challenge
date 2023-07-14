@@ -32,6 +32,10 @@
   align-items: center;
   flex-direction: column;
   height: 35em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .modalButtonContainer {

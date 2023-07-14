@@ -47,7 +47,7 @@ export const CardListings = () => {
         centered={true}
         xOffset={0}
         yOffset={0}
-        size={"lg"}
+        size="auto"
       >
         <section className="modalContainer">
           <ModalCarousel

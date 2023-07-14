@@ -32,12 +32,12 @@ export const NavBar = ({ item, hasSearch, hasRoute, navToCards }) => {
           </search>
         )}
         {hasRoute && (
-          <a className="routePath">
+          <text className="routePath">
             <Link className="link" to="/">
               All Cards
             </Link>
-            <IconChevronRight /> {item["Title"]}
-          </a>
+            <IconChevronRight /> <text className="title">{item["Title"]}</text>
+          </text>
         )}
       </nav>
       <ColouredLine colour="#273963" />

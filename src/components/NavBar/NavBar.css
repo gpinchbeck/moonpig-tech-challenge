@@ -8,7 +8,7 @@ nav {
 
 .searchContainer {
   display: flex;
-  /* width: 45rem; */
+  width: 45rem;
   justify-content: center;
   margin-bottom: 2em;
 }

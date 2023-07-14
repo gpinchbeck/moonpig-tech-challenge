@@ -12,6 +12,8 @@ export const CardDetails = () => {
   const [data, setData] = useState([]);
   const [str, setStr] = useState("");
 
+  const patt = /abc/g;
+
   const item = location.state.item;
 
   useEffect(() => {
@@ -44,7 +46,7 @@ export const CardDetails = () => {
           <h4>{data["Title"]}</h4>
           {data !== undefined && (
             <p className="description">
-              {str.toString().replaceAll("<br />", "\n")}
+              {str.toString().replaceAll(/<br \/>|<br>/g, "\n")}
             </p>
           )}
           <Button

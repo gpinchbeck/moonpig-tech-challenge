@@ -16,7 +16,8 @@ export const SearchBar = ({ searchToNav }) => {
       <div className="searchButtonContainer">
         {searchTerm !== "" && (
           <div
-            role="closeButton"
+            role="button"
+            data-testid="closeButton"
             onClick={() => {
               searchToNav("");
               setSearchTerm("");
@@ -25,7 +26,11 @@ export const SearchBar = ({ searchToNav }) => {
             <IconX />
           </div>
         )}
-        <div role="searchButton" onClick={() => searchToNav(searchTerm)}>
+        <div
+          role="button"
+          data-testid="searchButton"
+          onClick={() => searchToNav(searchTerm)}
+        >
           <IconSearch />
         </div>
       </div>

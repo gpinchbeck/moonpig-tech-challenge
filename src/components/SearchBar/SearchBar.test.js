@@ -7,7 +7,7 @@ describe("SearchBar", () => {
     render(<SearchBar searchToNav={() => {}} />);
 
     const inputElement = screen.getByPlaceholderText("Search");
-    const searchButton = screen.getByRole("searchButton");
+    const searchButton = screen.getByTestId("searchButton");
 
     expect(inputElement).toBeInTheDocument();
     expect(searchButton).toBeInTheDocument();
@@ -27,7 +27,7 @@ describe("SearchBar", () => {
     const searchToNavMock = jest.fn();
     render(<SearchBar searchToNav={searchToNavMock} />);
 
-    const searchButton = screen.getByRole("searchButton");
+    const searchButton = screen.getByTestId("searchButton");
     fireEvent.click(searchButton);
 
     expect(searchToNavMock).toHaveBeenCalledTimes(1);
@@ -40,7 +40,7 @@ describe("SearchBar", () => {
     const inputElement = screen.getByRole("textbox");
     fireEvent.change(inputElement, { target: { value: "test" } });
 
-    const closeButton = screen.getByRole("closeButton");
+    const closeButton = screen.getByTestId("closeButton");
     fireEvent.click(closeButton);
 
     expect(searchToNavMock).toHaveBeenCalledWith("");

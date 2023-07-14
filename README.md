@@ -1,7 +1,7 @@
-[Next Steps](#next-steps)
-[Had More Time](#had-more-time)
-[Future Developments](#future-developments)
-[File Structure](#file-structure)
+[Next Steps](#next-steps)  
+[Had More Time](#had-more-time)  
+[Future Developments](#future-developments)  
+[File Structure](#file-structure)  
 
 # Next Steps
 ## Had More Time

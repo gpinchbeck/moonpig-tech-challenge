@@ -1,5 +1,10 @@
-## Next Steps
-# Had More Time
+[Next Steps](#next-steps)
+[Had More Time](#had-more-time)
+[Future Developments](#future-developments)
+[File Structure](#file-structure)
+
+# Next Steps
+## Had More Time
 
 - Better responsiveness
 - Error handling
@@ -8,14 +13,14 @@
 - More interesting styling (better UI, animations)
 - Pagination
 
-# Future Developments
+## Future Developments
 
 - Add to basket feature
 - Accounts
 - Landing page with routes to other pages
 - Progressive Web App
 
-## File Structure
+# File Structure
 ```bash
 ├── README.md
 ├── node_modules
